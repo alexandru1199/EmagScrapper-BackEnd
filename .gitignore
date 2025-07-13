@@ -1,0 +1,69 @@
+# === Python bytecode ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Virtualenv ===
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# === VSCode ===
+.vscode/
+
+# === OS generated ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Pip ===
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === Jupyter / IPython ===
+.ipynb_checkpoints/
+*.ipynb
+
+# === PyInstaller ===
+*.spec
+build/
+dist/
+
+# === Scrapy ===
+.scrapy/
+*.log
+*.json
+*.csv
+
+# === Selenium / WebDrivers ===
+chromedriver
+chromedriver.exe
+geckodriver
+geckodriver.exe
+*.dll
+*.exe
+*.pak
+*.dat
+
+# === Database / Cache ===
+*.sqlite3
+*.db
+*.pkl
+*.zip
+
+# === Git ===
+*.orig
+*.swp
+
+# === Node / Angular (dacă ai frontend în același repo) ===
+node_modules/
+dist/
+.angular/
+.tmp/
+package-lock.json
+npm-debug.log
+
+# === Chrome temp folders ===
+chrome-win64/
