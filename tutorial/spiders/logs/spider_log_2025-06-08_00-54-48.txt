@@ -1,0 +1,379 @@
+2025-06-08 00:54:48 [scrapy.utils.log] INFO: Scrapy 2.13.1 started (bot: tutorial)
+2025-06-08 00:54:48 [scrapy.utils.log] INFO: Versions:
+{'lxml': '5.4.0',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '25.1.0 (OpenSSL 3.5.0 8 Apr 2025)',
+ 'cryptography': '45.0.3',
+ 'Platform': 'Windows-10-10.0.19045-SP0'}
+2025-06-08 00:54:49 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-06-08 00:54:49 [py.warnings] WARNING: C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\utils\request.py:120: ScrapyDeprecationWarning: 'REQUEST_FINGERPRINTER_IMPLEMENTATION' is a deprecated setting.
+It will be removed in a future version of Scrapy.
+  return cls(crawler)
+
+2025-06-08 00:54:49 [asyncio] DEBUG: Using selector: SelectSelector
+2025-06-08 00:54:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-06-08 00:54:49 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-06-08 00:54:49 [scrapy.extensions.telnet] INFO: Telnet Password: b0ac717d4c48eedc
+2025-06-08 00:54:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-06-08 00:54:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'tutorial',
+ 'DOWNLOAD_DELAY': 0.2,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'tutorial.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SCHEDULER_PRIORITY_QUEUE': 'scrapy.pqueues.DownloaderAwarePriorityQueue',
+ 'SPIDER_MODULES': ['tutorial.spiders']}
+2025-06-08 00:54:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-06-08 00:54:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-06-08 00:54:49 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-06-08 00:54:49 [scrapy.core.engine] INFO: Spider opened
+2025-06-08 00:54:49 [py.warnings] WARNING: C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\core\spidermw.py:433: ScrapyDeprecationWarning: tutorial.spiders.produse-pagina-principala.ProduseSpider defines the deprecated start_requests() method. start_requests() has been deprecated in favor of a new method, start(), to support asynchronous code execution. start_requests() will stop being called in a future version of Scrapy. If you use Scrapy 2.13 or higher only, replace start_requests() with start(); note that start() is a coroutine (async def). If you need to maintain compatibility with lower Scrapy versions, when overriding start_requests() in a spider class, override start() as well; you can use super() to reuse the inherited start() implementation without copy-pasting. See the release notes of Scrapy 2.13 for details: https://docs.scrapy.org/en/2.13/news.html
+  warn(
+
+2025-06-08 00:54:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-06-08 00:54:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-06-08 00:54:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/robots.txt> (referer: None)
+2025-06-08 00:54:49 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/robots.txt> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:49 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/robots.txt> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:49 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.emag.roasti-audio-telefoane/robots.txt> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:49 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.emag.roasti-audio-telefoane/robots.txt>: DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+Traceback (most recent call last):
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1853, in _inlineCallbacks
+    result = context.run(
+             ^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\core\downloader\middleware.py", line 68, in process_request
+    return (yield download_func(request, spider))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1092, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\endpoints.py", line 1091, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/docking-stations/c> (referer: None)
+2025-06-08 00:54:50 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: docking-stations - URL: https://www.emag.ro/docking-stations/c
+2025-06-08 00:54:50 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/c> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/docking-stations/p2/c> (referer: None)
+2025-06-08 00:54:50 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: docking-stations - URL: https://www.emag.ro/docking-stations/p2/c
+2025-06-08 00:54:50 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/p2/c> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/docking-stations/p3/c> (referer: None)
+2025-06-08 00:54:50 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/p3/c> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/docking-stations/p4/c> (referer: None)
+2025-06-08 00:54:50 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: docking-stations - URL: https://www.emag.ro/docking-stations/p3/c
+2025-06-08 00:54:50 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: docking-stations - URL: https://www.emag.ro/docking-stations/p4/c
+2025-06-08 00:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/docking-stations/p5/c> (referer: None)
+2025-06-08 00:54:50 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/p4/c> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:50 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: docking-stations - URL: https://www.emag.ro/docking-stations/p5/c
+2025-06-08 00:54:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/standuri-coolere-notebook/c> (referer: None)
+2025-06-08 00:54:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/p5/c> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:51 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: standuri-coolere-notebook - URL: https://www.emag.ro/standuri-coolere-notebook/c
+2025-06-08 00:54:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/standuri-coolere-notebook/p2/c> (referer: None)
+2025-06-08 00:54:51 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: standuri-coolere-notebook - URL: https://www.emag.ro/standuri-coolere-notebook/p2/c
+2025-06-08 00:54:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/c> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/standuri-coolere-notebook/p3/c> (referer: None)
+2025-06-08 00:54:51 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: standuri-coolere-notebook - URL: https://www.emag.ro/standuri-coolere-notebook/p3/c
+2025-06-08 00:54:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/p2/c> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/standuri-coolere-notebook/p4/c> (referer: None)
+2025-06-08 00:54:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/p3/c> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:51 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: standuri-coolere-notebook - URL: https://www.emag.ro/standuri-coolere-notebook/p4/c
+2025-06-08 00:54:52 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/p4/c> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/standuri-coolere-notebook/p5/c> (referer: None)
+2025-06-08 00:54:52 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: standuri-coolere-notebook - URL: https://www.emag.ro/standuri-coolere-notebook/p5/c
+2025-06-08 00:54:52 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.emag.roasti-audio-telefoane/p5/c> (failed 2 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii/c> (referer: None)
+2025-06-08 00:54:52 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: alte-accesorii - URL: https://www.emag.ro/alte-accesorii/c
+2025-06-08 00:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii/p2/c> (referer: None)
+2025-06-08 00:54:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.emag.roasti-audio-telefoane/c> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:52 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: alte-accesorii - URL: https://www.emag.ro/alte-accesorii/p2/c
+2025-06-08 00:54:52 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.emag.roasti-audio-telefoane/c>
+Traceback (most recent call last):
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1853, in _inlineCallbacks
+    result = context.run(
+             ^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\core\downloader\middleware.py", line 68, in process_request
+    return (yield download_func(request, spider))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1092, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\endpoints.py", line 1091, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii/p3/c> (referer: None)
+2025-06-08 00:54:52 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.emag.roasti-audio-telefoane/p2/c> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:52 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: alte-accesorii - URL: https://www.emag.ro/alte-accesorii/p3/c
+2025-06-08 00:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii/p4/c> (referer: None)
+2025-06-08 00:54:53 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.emag.roasti-audio-telefoane/p2/c>
+Traceback (most recent call last):
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1853, in _inlineCallbacks
+    result = context.run(
+             ^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\core\downloader\middleware.py", line 68, in process_request
+    return (yield download_func(request, spider))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1092, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\endpoints.py", line 1091, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:53 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: alte-accesorii - URL: https://www.emag.ro/alte-accesorii/p4/c
+2025-06-08 00:54:53 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.emag.roasti-audio-telefoane/p3/c> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii/p5/c> (referer: None)
+2025-06-08 00:54:53 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.emag.roasti-audio-telefoane/p3/c>
+Traceback (most recent call last):
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1853, in _inlineCallbacks
+    result = context.run(
+             ^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\core\downloader\middleware.py", line 68, in process_request
+    return (yield download_func(request, spider))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1092, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\endpoints.py", line 1091, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:53 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: alte-accesorii - URL: https://www.emag.ro/alte-accesorii/p5/c
+2025-06-08 00:54:53 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.emag.roasti-audio-telefoane/p4/c> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:53 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.emag.roasti-audio-telefoane/p4/c>
+Traceback (most recent call last):
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1853, in _inlineCallbacks
+    result = context.run(
+             ^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\core\downloader\middleware.py", line 68, in process_request
+    return (yield download_func(request, spider))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1092, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\endpoints.py", line 1091, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/power-bank-telefoane/c> (referer: None)
+2025-06-08 00:54:53 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://www.emag.roasti-audio-telefoane/p5/c> (failed 3 times): DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:53 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: power-bank-telefoane - URL: https://www.emag.ro/power-bank-telefoane/c
+2025-06-08 00:54:53 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.emag.roasti-audio-telefoane/p5/c>
+Traceback (most recent call last):
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1853, in _inlineCallbacks
+    result = context.run(
+             ^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\python\failure.py", line 467, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\core\downloader\middleware.py", line 68, in process_request
+    return (yield download_func(request, spider))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1092, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\endpoints.py", line 1091, in startConnectionAttempts
+    raise error.DNSLookupError(
+twisted.internet.error.DNSLookupError: DNS lookup failed: no results for hostname lookup: www.emag.roasti-audio-telefoane.
+2025-06-08 00:54:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/power-bank-telefoane/p2/c> (referer: None)
+2025-06-08 00:54:53 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: power-bank-telefoane - URL: https://www.emag.ro/power-bank-telefoane/p2/c
+2025-06-08 00:54:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/power-bank-telefoane/p3/c> (referer: None)
+2025-06-08 00:54:54 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: power-bank-telefoane - URL: https://www.emag.ro/power-bank-telefoane/p3/c
+2025-06-08 00:54:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/power-bank-telefoane/p4/c> (referer: None)
+2025-06-08 00:54:54 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: power-bank-telefoane - URL: https://www.emag.ro/power-bank-telefoane/p4/c
+2025-06-08 00:54:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/power-bank-telefoane/p5/c> (referer: None)
+2025-06-08 00:54:54 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: power-bank-telefoane - URL: https://www.emag.ro/power-bank-telefoane/p5/c
+2025-06-08 00:54:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/incarcatoare-telefoane/c> (referer: None)
+2025-06-08 00:54:55 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: incarcatoare-telefoane - URL: https://www.emag.ro/incarcatoare-telefoane/c
+2025-06-08 00:54:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/incarcatoare-telefoane/p2/c> (referer: None)
+2025-06-08 00:54:55 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: incarcatoare-telefoane - URL: https://www.emag.ro/incarcatoare-telefoane/p2/c
+2025-06-08 00:54:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/incarcatoare-telefoane/p3/c> (referer: None)
+2025-06-08 00:54:55 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: incarcatoare-telefoane - URL: https://www.emag.ro/incarcatoare-telefoane/p3/c
+2025-06-08 00:54:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/incarcatoare-telefoane/p4/c> (referer: None)
+2025-06-08 00:54:55 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: incarcatoare-telefoane - URL: https://www.emag.ro/incarcatoare-telefoane/p4/c
+2025-06-08 00:54:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/incarcatoare-telefoane/p5/c> (referer: None)
+2025-06-08 00:54:56 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: incarcatoare-telefoane - URL: https://www.emag.ro/incarcatoare-telefoane/p5/c
+2025-06-08 00:54:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/adaptoare-telefoane-mobile/c> (referer: None)
+2025-06-08 00:54:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/adaptoare-telefoane-mobile/p2/c> (referer: None)
+2025-06-08 00:54:56 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: adaptoare-telefoane-mobile - URL: https://www.emag.ro/adaptoare-telefoane-mobile/c
+2025-06-08 00:54:56 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: adaptoare-telefoane-mobile - URL: https://www.emag.ro/adaptoare-telefoane-mobile/p2/c
+2025-06-08 00:54:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/adaptoare-telefoane-mobile/p3/c> (referer: None)
+2025-06-08 00:54:56 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: adaptoare-telefoane-mobile - URL: https://www.emag.ro/adaptoare-telefoane-mobile/p3/c
+2025-06-08 00:54:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/adaptoare-telefoane-mobile/p4/c> (referer: None)
+2025-06-08 00:54:57 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: adaptoare-telefoane-mobile - URL: https://www.emag.ro/adaptoare-telefoane-mobile/p4/c
+2025-06-08 00:54:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/adaptoare-telefoane-mobile/p5/c> (referer: None)
+2025-06-08 00:54:57 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: adaptoare-telefoane-mobile - URL: https://www.emag.ro/adaptoare-telefoane-mobile/p5/c
+2025-06-08 00:54:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-docking-telefoane/c> (referer: None)
+2025-06-08 00:54:57 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: suport-docking-telefoane - URL: https://www.emag.ro/suport-docking-telefoane/c
+2025-06-08 00:54:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-docking-telefoane/p2/c> (referer: None)
+2025-06-08 00:54:57 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: suport-docking-telefoane - URL: https://www.emag.ro/suport-docking-telefoane/p2/c
+2025-06-08 00:54:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-docking-telefoane/p3/c> (referer: None)
+2025-06-08 00:54:58 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: suport-docking-telefoane - URL: https://www.emag.ro/suport-docking-telefoane/p3/c
+2025-06-08 00:54:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-docking-telefoane/p4/c> (referer: None)
+2025-06-08 00:54:58 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: suport-docking-telefoane - URL: https://www.emag.ro/suport-docking-telefoane/p4/c
+2025-06-08 00:54:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-docking-telefoane/p5/c> (referer: None)
+2025-06-08 00:54:58 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: suport-docking-telefoane - URL: https://www.emag.ro/suport-docking-telefoane/p5/c
+2025-06-08 00:54:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-telefoane/p2/c> (referer: None)
+2025-06-08 00:54:58 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: alte-accesorii-telefoane - URL: https://www.emag.ro/alte-accesorii-telefoane/p2/c
+2025-06-08 00:54:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.emag.ro/alte-accesorii-telefoane/p2/c> (referer: None)
+Traceback (most recent call last):
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\core\scraper.py", line 194, in _scrape
+    output = await maybe_deferred_to_future(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\twisted\internet\defer.py", line 1257, in adapt
+    extracted: _SelfResultT | Failure = result.result()
+                                        ^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\.venv\Lib\site-packages\scrapy\core\scraper.py", line 246, in call_spider_async
+    output = callback(result, **result.request.cb_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Emag-Product-Scrapper\Emag-Product-Scrapper-Web-Crawler\tutorial\tutorial\spiders\produse-pagina-principala.py", line 77, in parse
+    index = self.index_tracker[categorie]
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'alte-accesorii-telefoane'
+2025-06-08 00:54:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-telefoane/c> (referer: None)
+2025-06-08 00:54:58 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: alte-accesorii-telefoane - URL: https://www.emag.ro/alte-accesorii-telefoane/c
+2025-06-08 00:54:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-telefoane/p3/c> (referer: None)
+2025-06-08 00:54:59 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: alte-accesorii-telefoane - URL: https://www.emag.ro/alte-accesorii-telefoane/p3/c
+2025-06-08 00:54:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-telefoane/p4/c> (referer: None)
+2025-06-08 00:54:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://www.emag.ro/> from <GET https://www.emag.ro/resigilateasti-audio-bluetooth/c>
+2025-06-08 00:54:59 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: alte-accesorii-telefoane - URL: https://www.emag.ro/alte-accesorii-telefoane/p4/c
+2025-06-08 00:54:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://www.emag.ro/> from <GET https://www.emag.ro/resigilateasti-audio-bluetooth/p2/c>
+2025-06-08 00:54:59 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.emag.ro/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2025-06-08 00:54:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-telefoane/p5/c> (referer: None)
+2025-06-08 00:54:59 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: alte-accesorii-telefoane - URL: https://www.emag.ro/alte-accesorii-telefoane/p5/c
+2025-06-08 00:54:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://www.emag.ro/> from <GET https://www.emag.ro/resigilateasti-audio-bluetooth/p3/c>
+2025-06-08 00:54:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://www.emag.ro/> from <GET https://www.emag.ro/resigilateasti-audio-bluetooth/p4/c>
+2025-06-08 00:55:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://www.emag.ro/> from <GET https://www.emag.ro/resigilateasti-audio-bluetooth/p5/c>
+2025-06-08 00:55:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-auto-docking/c> (referer: None)
+2025-06-08 00:55:00 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: suport-auto-docking - URL: https://www.emag.ro/suport-auto-docking/c
+2025-06-08 00:55:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-auto-docking/p2/c> (referer: None)
+2025-06-08 00:55:01 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: suport-auto-docking - URL: https://www.emag.ro/suport-auto-docking/p2/c
+2025-06-08 00:55:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-auto-docking/p3/c> (referer: None)
+2025-06-08 00:55:01 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: suport-auto-docking - URL: https://www.emag.ro/suport-auto-docking/p3/c
+2025-06-08 00:55:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-auto-docking/p4/c> (referer: None)
+2025-06-08 00:55:01 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: suport-auto-docking - URL: https://www.emag.ro/suport-auto-docking/p4/c
+2025-06-08 00:55:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/suport-auto-docking/p5/c> (referer: None)
+2025-06-08 00:55:02 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: suport-auto-docking - URL: https://www.emag.ro/suport-auto-docking/p5/c
+2025-06-08 00:55:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-tablete/c> (referer: None)
+2025-06-08 00:55:02 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: alte-accesorii-tablete - URL: https://www.emag.ro/alte-accesorii-tablete/c
+2025-06-08 00:55:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-tablete/p2/c> (referer: None)
+2025-06-08 00:55:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-tablete/p3/c> (referer: None)
+2025-06-08 00:55:02 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: alte-accesorii-tablete - URL: https://www.emag.ro/alte-accesorii-tablete/p2/c
+2025-06-08 00:55:02 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: alte-accesorii-tablete - URL: https://www.emag.ro/alte-accesorii-tablete/p3/c
+2025-06-08 00:55:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-tablete/p4/c> (referer: None)
+2025-06-08 00:55:02 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: alte-accesorii-tablete - URL: https://www.emag.ro/alte-accesorii-tablete/p4/c
+2025-06-08 00:55:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/> (referer: None)
+2025-06-08 00:55:02 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: resigilateasti-audio-bluetooth - URL: https://www.emag.ro/
+2025-06-08 00:55:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alte-accesorii-tablete/p5/c> (referer: None)
+2025-06-08 00:55:03 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: alte-accesorii-tablete - URL: https://www.emag.ro/alte-accesorii-tablete/p5/c
+2025-06-08 00:55:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/smartwatch/c> (referer: None)
+2025-06-08 00:55:03 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: smartwatch - URL: https://www.emag.ro/smartwatch/c
+2025-06-08 00:55:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/smartwatch/p2/c> (referer: None)
+2025-06-08 00:55:03 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: smartwatch - URL: https://www.emag.ro/smartwatch/p2/c
+2025-06-08 00:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/smartwatch/p3/c> (referer: None)
+2025-06-08 00:55:04 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: smartwatch - URL: https://www.emag.ro/smartwatch/p3/c
+2025-06-08 00:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/smartwatch/p4/c> (referer: None)
+2025-06-08 00:55:04 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: smartwatch - URL: https://www.emag.ro/smartwatch/p4/c
+2025-06-08 00:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/smartwatch/p5/c> (referer: None)
+2025-06-08 00:55:04 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: smartwatch - URL: https://www.emag.ro/smartwatch/p5/c
+2025-06-08 00:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-smartwatch/c> (referer: None)
+2025-06-08 00:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-smartwatch/p2/c> (referer: None)
+2025-06-08 00:55:05 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: accesorii-smartwatch - URL: https://www.emag.ro/accesorii-smartwatch/c
+2025-06-08 00:55:05 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: accesorii-smartwatch - URL: https://www.emag.ro/accesorii-smartwatch/p2/c
+2025-06-08 00:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-smartwatch/p3/c> (referer: None)
+2025-06-08 00:55:05 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: accesorii-smartwatch - URL: https://www.emag.ro/accesorii-smartwatch/p3/c
+2025-06-08 00:55:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-smartwatch/p4/c> (referer: None)
+2025-06-08 00:55:05 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: accesorii-smartwatch - URL: https://www.emag.ro/accesorii-smartwatch/p4/c
+2025-06-08 00:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-smartwatch/p5/c> (referer: None)
+2025-06-08 00:55:06 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: accesorii-smartwatch - URL: https://www.emag.ro/accesorii-smartwatch/p5/c
+2025-06-08 00:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/bratari-fitness/c> (referer: None)
+2025-06-08 00:55:06 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: bratari-fitness - URL: https://www.emag.ro/bratari-fitness/c
+2025-06-08 00:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/bratari-fitness/p2/c> (referer: None)
+2025-06-08 00:55:06 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: bratari-fitness - URL: https://www.emag.ro/bratari-fitness/p2/c
+2025-06-08 00:55:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/bratari-fitness/p3/c> (referer: None)
+2025-06-08 00:55:07 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: bratari-fitness - URL: https://www.emag.ro/bratari-fitness/p3/c
+2025-06-08 00:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/bratari-fitness/p4/c> (referer: None)
+2025-06-08 00:55:07 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: bratari-fitness - URL: https://www.emag.ro/bratari-fitness/p4/c
+2025-06-08 00:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/bratari-fitness/p5/c> (referer: None)
+2025-06-08 00:55:07 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: bratari-fitness - URL: https://www.emag.ro/bratari-fitness/p5/c
+2025-06-08 00:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-bratari-fitness/c> (referer: None)
+2025-06-08 00:55:07 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: accesorii-bratari-fitness - URL: https://www.emag.ro/accesorii-bratari-fitness/c
+2025-06-08 00:55:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-bratari-fitness/p2/c> (referer: None)
+2025-06-08 00:55:07 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: accesorii-bratari-fitness - URL: https://www.emag.ro/accesorii-bratari-fitness/p2/c
+2025-06-08 00:55:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-bratari-fitness/p3/c> (referer: None)
+2025-06-08 00:55:08 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: accesorii-bratari-fitness - URL: https://www.emag.ro/accesorii-bratari-fitness/p3/c
+2025-06-08 00:55:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.emag.ro/becuri/filter/tip-f6990,smart-v-3750299/c> from <GET https://www.emag.ro/becuri-smart/c>
+2025-06-08 00:55:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-bratari-fitness/p4/c> (referer: None)
+2025-06-08 00:55:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/accesorii-bratari-fitness/p5/c> (referer: None)
+2025-06-08 00:55:08 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: accesorii-bratari-fitness - URL: https://www.emag.ro/accesorii-bratari-fitness/p4/c
+2025-06-08 00:55:08 [produse-pagina-principala] INFO: [INFO] Pagina 5 - Categorie: accesorii-bratari-fitness - URL: https://www.emag.ro/accesorii-bratari-fitness/p5/c
+2025-06-08 00:55:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.emag.ro/becuri/filter/tip-f6990,smart-v-3750299/c> from <GET https://www.emag.ro/becuri-smart/p2/c>
+2025-06-08 00:55:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.emag.ro/becuri/filter/tip-f6990,smart-v-3750299/c> from <GET https://www.emag.ro/becuri-smart/p3/c>
+2025-06-08 00:55:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.emag.ro/becuri/filter/tip-f6990,smart-v-3750299/c> from <GET https://www.emag.ro/becuri-smart/p4/c>
+2025-06-08 00:55:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.emag.ro/becuri/filter/tip-f6990,smart-v-3750299/c> from <GET https://www.emag.ro/becuri-smart/p5/c>
+2025-06-08 00:55:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.emag.ro/prize/filter/standard-priza-f7025,programabil-v-3750416/c> from <GET https://www.emag.ro/prize-smart/c>
+2025-06-08 00:55:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://www.emag.ro/> from <GET https://www.emag.ro/prize-smart/p2/c>
+2025-06-08 00:55:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://www.emag.ro/> from <GET https://www.emag.ro/prize-smart/p3/c>
+2025-06-08 00:55:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://www.emag.ro/> from <GET https://www.emag.ro/prize-smart/p4/c>
+2025-06-08 00:55:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET https://www.emag.ro/> from <GET https://www.emag.ro/prize-smart/p5/c>
+2025-06-08 00:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alarme-smart/c> (referer: None)
+2025-06-08 00:55:11 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: alarme-smart - URL: https://www.emag.ro/alarme-smart/c
+2025-06-08 00:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alarme-smart/p2/c> (referer: None)
+2025-06-08 00:55:11 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: alarme-smart - URL: https://www.emag.ro/alarme-smart/p2/c
+2025-06-08 00:55:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/alarme-smart/p3/c> (referer: None)
+2025-06-08 00:55:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.emag.ro/alarme-smart/c> from <GET https://www.emag.ro/alarme-smart/p4/c>
+2025-06-08 00:55:11 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: alarme-smart - URL: https://www.emag.ro/alarme-smart/p3/c
+2025-06-08 00:55:12 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2025-06-08 00:55:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.emag.ro/alarme-smart/c> from <GET https://www.emag.ro/alarme-smart/p5/c>
+2025-06-08 00:55:12 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2025-06-08 00:55:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/becuri/filter/tip-f6990,smart-v-3750299/c> (referer: None)
+2025-06-08 00:55:12 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: becuri-smart - URL: https://www.emag.ro/becuri/filter/tip-f6990,smart-v-3750299/c
+2025-06-08 00:55:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/kit-uri-smart-home-si-senzori/c> (referer: None)
+2025-06-08 00:55:12 [produse-pagina-principala] INFO: [INFO] Pagina 1 - Categorie: kit-uri-smart-home-si-senzori - URL: https://www.emag.ro/kit-uri-smart-home-si-senzori/c
+2025-06-08 00:55:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/kit-uri-smart-home-si-senzori/p2/c> (referer: None)
+2025-06-08 00:55:13 [produse-pagina-principala] INFO: [INFO] Pagina 2 - Categorie: kit-uri-smart-home-si-senzori - URL: https://www.emag.ro/kit-uri-smart-home-si-senzori/p2/c
+2025-06-08 00:55:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/kit-uri-smart-home-si-senzori/p3/c> (referer: None)
+2025-06-08 00:55:13 [produse-pagina-principala] INFO: [INFO] Pagina 3 - Categorie: kit-uri-smart-home-si-senzori - URL: https://www.emag.ro/kit-uri-smart-home-si-senzori/p3/c
+2025-06-08 00:55:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/kit-uri-smart-home-si-senzori/p4/c> (referer: None)
+2025-06-08 00:55:13 [produse-pagina-principala] INFO: [INFO] Pagina 4 - Categorie: kit-uri-smart-home-si-senzori - URL: https://www.emag.ro/kit-uri-smart-home-si-senzori/p4/c
+2025-06-08 00:55:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.emag.ro/kit-uri-smart-home-si-senzori/p5/c> (referer: None)
