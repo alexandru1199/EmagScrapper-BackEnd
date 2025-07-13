@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.log
+*.sqlite3
+*.db
+*.pid
+
+# Virtual environment
+venv/
+.venv/
+ENV/
+env/
+env.bak/
+*.swp
+
+# Flask
+instance/
+*.pyc
+*.pyo
+*.pyd
+
+# Scrapy
+.scrapy/
+*.egg-info/
+
+# Selenium
+chromedriver
+chromedriver.exe
+
+# VSCode & IDEs
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
