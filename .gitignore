@@ -1,37 +1,70 @@
-# Python
+# === Python bytecode ===
 __pycache__/
 *.py[cod]
-*.log
-*.sqlite3
-*.db
-*.pid
+*$py.class
 
-# Virtual environment
-venv/
+# === Virtualenv ===
 .venv/
-ENV/
 env/
-env.bak/
-*.swp
+venv/
 
-# Flask
-instance/
-*.pyc
-*.pyo
-*.pyd
-
-# Scrapy
+# === Scrapy ===
 .scrapy/
-*.egg-info/
+*.log
+*.json
+*.csv
 
-# Selenium
+# === Selenium / WebDrivers ===
 chromedriver
 chromedriver.exe
+geckodriver
+geckodriver.exe
 
-# VSCode & IDEs
+# === VSCode ===
 .vscode/
-.idea/
 
-# System
+# === OS generated ===
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# === Pip ===
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === Environment config ===
+.env
+.env.*
+
+# === Jupyter / IPython ===
+.ipynb_checkpoints/
+*.ipynb
+
+# === PyInstaller ===
+*.spec
+build/
+dist/
+
+# === Test ===
+.tox/
+coverage/
+coverage.xml
+*.cover
+.hypothesis/
+
+# === Git backup ===
+*.orig
+
+# === Logs ===
+*.log
+
+# === Compiled extensions ===
+*.so
+*.pyd
+*.dll
+
+# === Project specific ===
+raw/
+*.sqlite3
+*.db
+*.zip
